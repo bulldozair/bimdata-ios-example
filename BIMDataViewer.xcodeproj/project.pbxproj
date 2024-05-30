@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0C3703D2C10CD45002879E9 /* viewer.js in Resources */ = {isa = PBXBuildFile; fileRef = A0C3703C2C10CD45002879E9 /* viewer.js */; };
+		A0E279AA2BA4BCBC00BBE295 /* JSLoggerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E279A92BA4BCBC00BBE295 /* JSLoggerListener.swift */; };
+		A0FE17232B51AB25008E7C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17222B51AB25008E7C31 /* AppDelegate.swift */; };
+		A0FE17252B51AB25008E7C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17242B51AB25008E7C31 /* SceneDelegate.swift */; };
+		A0FE172A2B51AB25008E7C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FE17282B51AB25008E7C31 /* Main.storyboard */; };
+		A0FE172C2B51AB25008E7C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FE172B2B51AB25008E7C31 /* Assets.xcassets */; };
+		A0FE172F2B51AB25008E7C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FE172D2B51AB25008E7C31 /* LaunchScreen.storyboard */; };
+		A0FE173A2B51AB25008E7C31 /* BIMDataViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17392B51AB25008E7C31 /* BIMDataViewerTests.swift */; };
+		A0FE17442B51AB25008E7C31 /* BIMDataViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17432B51AB25008E7C31 /* BIMDataViewerUITests.swift */; };
+		A0FE17462B51AB25008E7C31 /* BIMDataViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17452B51AB25008E7C31 /* BIMDataViewerUITestsLaunchTests.swift */; };
+		A0FE17532B51ABA7008E7C31 /* BIMDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17522B51ABA7008E7C31 /* BIMDataViewController.swift */; };
+		A0FE17572B51ABC3008E7C31 /* BIMDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FE17562B51ABC3008E7C31 /* BIMDataModel.swift */; };
+		E2B194DA2C076F1200FFAED4 /* viewer.html in Resources */ = {isa = PBXBuildFile; fileRef = E2B194D72C076F1200FFAED4 /* viewer.html */; };
+		E2B367EE2C0770B200622FF5 /* utils.js in Resources */ = {isa = PBXBuildFile; fileRef = E2B367EC2C0770B200622FF5 /* utils.js */; };
+		E2B367EF2C0770B200622FF5 /* offline-package.zip in Resources */ = {isa = PBXBuildFile; fileRef = E2B367ED2C0770B200622FF5 /* offline-package.zip */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0FE17362B51AB25008E7C31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0FE17172B51AB25008E7C31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FE171E2B51AB25008E7C31;
+			remoteInfo = BIMDataViewer;
+		};
+		A0FE17402B51AB25008E7C31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0FE17172B51AB25008E7C31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FE171E2B51AB25008E7C31;
+			remoteInfo = BIMDataViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0C3703C2C10CD45002879E9 /* viewer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = viewer.js; sourceTree = "<group>"; };
+		A0E279A92BA4BCBC00BBE295 /* JSLoggerListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSLoggerListener.swift; sourceTree = "<group>"; };
+		A0FE171F2B51AB25008E7C31 /* BIMDataViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIMDataViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FE17222B51AB25008E7C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0FE17242B51AB25008E7C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0FE17292B51AB25008E7C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0FE172B2B51AB25008E7C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0FE172E2B51AB25008E7C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0FE17302B51AB25008E7C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FE17352B51AB25008E7C31 /* BIMDataViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIMDataViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FE17392B51AB25008E7C31 /* BIMDataViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMDataViewerTests.swift; sourceTree = "<group>"; };
+		A0FE173F2B51AB25008E7C31 /* BIMDataViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BIMDataViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0FE17432B51AB25008E7C31 /* BIMDataViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMDataViewerUITests.swift; sourceTree = "<group>"; };
+		A0FE17452B51AB25008E7C31 /* BIMDataViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMDataViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0FE17522B51ABA7008E7C31 /* BIMDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMDataViewController.swift; sourceTree = "<group>"; };
+		A0FE17562B51ABC3008E7C31 /* BIMDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMDataModel.swift; sourceTree = "<group>"; };
+		E2B194D72C076F1200FFAED4 /* viewer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = viewer.html; sourceTree = "<group>"; };
+		E2B367EC2C0770B200622FF5 /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
+		E2B367ED2C0770B200622FF5 /* offline-package.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "offline-package.zip"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0FE171C2B51AB25008E7C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE17322B51AB25008E7C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE173C2B51AB25008E7C31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0FE17162B51AB25008E7C31 = {
+			isa = PBXGroup;
+			children = (
+				A0FE17212B51AB25008E7C31 /* BIMDataViewer */,
+				A0FE17382B51AB25008E7C31 /* BIMDataViewerTests */,
+				A0FE17422B51AB25008E7C31 /* BIMDataViewerUITests */,
+				A0FE17202B51AB25008E7C31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0FE17202B51AB25008E7C31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE171F2B51AB25008E7C31 /* BIMDataViewer.app */,
+				A0FE17352B51AB25008E7C31 /* BIMDataViewerTests.xctest */,
+				A0FE173F2B51AB25008E7C31 /* BIMDataViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0FE17212B51AB25008E7C31 /* BIMDataViewer */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE17222B51AB25008E7C31 /* AppDelegate.swift */,
+				A0FE17242B51AB25008E7C31 /* SceneDelegate.swift */,
+				A0FE17522B51ABA7008E7C31 /* BIMDataViewController.swift */,
+				A0E279A92BA4BCBC00BBE295 /* JSLoggerListener.swift */,
+				A0FE17562B51ABC3008E7C31 /* BIMDataModel.swift */,
+				E2B194D82C076F1200FFAED4 /* Viewer */,
+				A0FE17282B51AB25008E7C31 /* Main.storyboard */,
+				A0FE172B2B51AB25008E7C31 /* Assets.xcassets */,
+				A0FE172D2B51AB25008E7C31 /* LaunchScreen.storyboard */,
+				A0FE17302B51AB25008E7C31 /* Info.plist */,
+			);
+			path = BIMDataViewer;
+			sourceTree = "<group>";
+		};
+		A0FE17382B51AB25008E7C31 /* BIMDataViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE17392B51AB25008E7C31 /* BIMDataViewerTests.swift */,
+			);
+			path = BIMDataViewerTests;
+			sourceTree = "<group>";
+		};
+		A0FE17422B51AB25008E7C31 /* BIMDataViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0FE17432B51AB25008E7C31 /* BIMDataViewerUITests.swift */,
+				A0FE17452B51AB25008E7C31 /* BIMDataViewerUITestsLaunchTests.swift */,
+			);
+			path = BIMDataViewerUITests;
+			sourceTree = "<group>";
+		};
+		E2B194D82C076F1200FFAED4 /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				E2B367ED2C0770B200622FF5 /* offline-package.zip */,
+				E2B367EC2C0770B200622FF5 /* utils.js */,
+				E2B194D72C076F1200FFAED4 /* viewer.html */,
+				A0C3703C2C10CD45002879E9 /* viewer.js */,
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0FE171E2B51AB25008E7C31 /* BIMDataViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FE17492B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewer" */;
+			buildPhases = (
+				A0FE171B2B51AB25008E7C31 /* Sources */,
+				A0FE171C2B51AB25008E7C31 /* Frameworks */,
+				A0FE171D2B51AB25008E7C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BIMDataViewer;
+			productName = BIMDataViewer;
+			productReference = A0FE171F2B51AB25008E7C31 /* BIMDataViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0FE17342B51AB25008E7C31 /* BIMDataViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FE174C2B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewerTests" */;
+			buildPhases = (
+				A0FE17312B51AB25008E7C31 /* Sources */,
+				A0FE17322B51AB25008E7C31 /* Frameworks */,
+				A0FE17332B51AB25008E7C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0FE17372B51AB25008E7C31 /* PBXTargetDependency */,
+			);
+			name = BIMDataViewerTests;
+			productName = BIMDataViewerTests;
+			productReference = A0FE17352B51AB25008E7C31 /* BIMDataViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0FE173E2B51AB25008E7C31 /* BIMDataViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FE174F2B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewerUITests" */;
+			buildPhases = (
+				A0FE173B2B51AB25008E7C31 /* Sources */,
+				A0FE173C2B51AB25008E7C31 /* Frameworks */,
+				A0FE173D2B51AB25008E7C31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0FE17412B51AB25008E7C31 /* PBXTargetDependency */,
+			);
+			name = BIMDataViewerUITests;
+			productName = BIMDataViewerUITests;
+			productReference = A0FE173F2B51AB25008E7C31 /* BIMDataViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0FE17172B51AB25008E7C31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A0FE171E2B51AB25008E7C31 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					A0FE17342B51AB25008E7C31 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A0FE171E2B51AB25008E7C31;
+					};
+					A0FE173E2B51AB25008E7C31 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = A0FE171E2B51AB25008E7C31;
+					};
+				};
+			};
+			buildConfigurationList = A0FE171A2B51AB25008E7C31 /* Build configuration list for PBXProject "BIMDataViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0FE17162B51AB25008E7C31;
+			productRefGroup = A0FE17202B51AB25008E7C31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0FE171E2B51AB25008E7C31 /* BIMDataViewer */,
+				A0FE17342B51AB25008E7C31 /* BIMDataViewerTests */,
+				A0FE173E2B51AB25008E7C31 /* BIMDataViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0FE171D2B51AB25008E7C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FE172F2B51AB25008E7C31 /* LaunchScreen.storyboard in Resources */,
+				A0C3703D2C10CD45002879E9 /* viewer.js in Resources */,
+				E2B367EF2C0770B200622FF5 /* offline-package.zip in Resources */,
+				A0FE172C2B51AB25008E7C31 /* Assets.xcassets in Resources */,
+				E2B194DA2C076F1200FFAED4 /* viewer.html in Resources */,
+				A0FE172A2B51AB25008E7C31 /* Main.storyboard in Resources */,
+				E2B367EE2C0770B200622FF5 /* utils.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE17332B51AB25008E7C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE173D2B51AB25008E7C31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0FE171B2B51AB25008E7C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E279AA2BA4BCBC00BBE295 /* JSLoggerListener.swift in Sources */,
+				A0FE17232B51AB25008E7C31 /* AppDelegate.swift in Sources */,
+				A0FE17252B51AB25008E7C31 /* SceneDelegate.swift in Sources */,
+				A0FE17572B51ABC3008E7C31 /* BIMDataModel.swift in Sources */,
+				A0FE17532B51ABA7008E7C31 /* BIMDataViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE17312B51AB25008E7C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FE173A2B51AB25008E7C31 /* BIMDataViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FE173B2B51AB25008E7C31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FE17442B51AB25008E7C31 /* BIMDataViewerUITests.swift in Sources */,
+				A0FE17462B51AB25008E7C31 /* BIMDataViewerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0FE17372B51AB25008E7C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FE171E2B51AB25008E7C31 /* BIMDataViewer */;
+			targetProxy = A0FE17362B51AB25008E7C31 /* PBXContainerItemProxy */;
+		};
+		A0FE17412B51AB25008E7C31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FE171E2B51AB25008E7C31 /* BIMDataViewer */;
+			targetProxy = A0FE17402B51AB25008E7C31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0FE17282B51AB25008E7C31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0FE17292B51AB25008E7C31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0FE172D2B51AB25008E7C31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0FE172E2B51AB25008E7C31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0FE17472B51AB25008E7C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0FE17482B51AB25008E7C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0FE174A2B51AB25008E7C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BIMDataViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulldozair.bimdata.ios.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0FE174B2B51AB25008E7C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BIMDataViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bulldozair.bimdata.ios.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0FE174D2B51AB25008E7C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fardel.armel.BIMDataViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIMDataViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BIMDataViewer";
+			};
+			name = Debug;
+		};
+		A0FE174E2B51AB25008E7C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fardel.armel.BIMDataViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BIMDataViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BIMDataViewer";
+			};
+			name = Release;
+		};
+		A0FE17502B51AB25008E7C31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fardel.armel.BIMDataViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BIMDataViewer;
+			};
+			name = Debug;
+		};
+		A0FE17512B51AB25008E7C31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fardel.armel.BIMDataViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BIMDataViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0FE171A2B51AB25008E7C31 /* Build configuration list for PBXProject "BIMDataViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FE17472B51AB25008E7C31 /* Debug */,
+				A0FE17482B51AB25008E7C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FE17492B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FE174A2B51AB25008E7C31 /* Debug */,
+				A0FE174B2B51AB25008E7C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FE174C2B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FE174D2B51AB25008E7C31 /* Debug */,
+				A0FE174E2B51AB25008E7C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FE174F2B51AB25008E7C31 /* Build configuration list for PBXNativeTarget "BIMDataViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FE17502B51AB25008E7C31 /* Debug */,
+				A0FE17512B51AB25008E7C31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0FE17172B51AB25008E7C31 /* Project object */;
+}

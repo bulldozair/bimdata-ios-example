@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>BIMDataViewer - Quick start</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+        </style>
+    </head>
+ 
+<!-- Test Logging from JavaScript to Swift -->
+<!-- It's to ensure that we correctly get the logs -->
+<!--
+ <script type="module">
+    console.debug('Test Debug Message');
+    console.info('Test Info Message');
+    console.warn('Test Warning Message');
+    console.error('Test Error Message');
+    console.log('Test Log Message');
+</script>
+ -->
+
+ <!-- Test Getting values from Javascript code injected in Swift in JavaScript -->
+ <!--
+ <script type="module">
+     const debugMessage = injectedObject.getMessageFromSwift()
+    console.debug('InjectedMessage: ' + debugMessage);
+</script>
+ -->
+
+<script src="viewer.js"></script>
+
+<script type="module">
+    import makeBIMDataViewer from "./viewer.js";
+    // If you want to load the file first and convert it into base64 incomment this line
+    //import { b64toBlob } from "./utils.js";
+
+    console.debug('Launching BIMData Viewer')
+    const apiConfig = JSON.parse(injectedObject.getViewerParams());
+    console.debug('Got JSON Config: ' + JSON.stringify(apiConfig));
+    
+    if (apiConfig.offline) {
+        console.debug('Offline setup');
+        // If you want to load the file first and convert it into base64 uncomment this line
+        //const blob = b64toBlob(apiConfig.offline.dataFile, "application/zip");
+        //apiConfig.offline.dataFile = blob;
+
+        // If you want to load the file first and convert it into base64 comment this line
+        apiConfig.offline.dataFile = apiConfig.offline.dataFile;
+    }
+  
+    
+    (async () => {
+        
+        const bimdataViewer = makeBIMDataViewer({
+            api: apiConfig,
+            ui: {
+                bimdataLogo: false,
+                header: false,
+                version: false,
+                windowManager: false,
+            },
+            plugins: {
+                bcf: false,
+                bcfManager: false,
+                fullscreen: true,
+                measure2d: false,
+                measure3d: false,
+                projection: false,
+                search: false,
+                section: false,
+                smartview: false,
+                "structure-properties": false,
+                viewer2d: {
+                    compass: false,
+                    help: false,
+                    modelLoader: "hidden",
+                    storeySelectorAutoOpen: false,
+                },
+                "viewer2d-screenshot": false,
+                viewer3d: {
+                    enableDTX: true,
+                    enableDynamicLOD: true,
+                    help: false,
+                    home: false,
+                    modelLoader: "hidden",
+                    navigationVersionsModel: false,
+                },
+            },
+        });
+        
+        const tabletConfig = {
+            ratios: [50, 50],
+            direction: 'column',
+            children: [
+                       {
+                           ratios: [25, 75],
+                           children: ['structure', '2d'],
+                       },
+                       {
+                           ratios: [25, 75],
+                           children: ['properties', '3d'],
+                       },
+                       ],
+        };
+        let config = tabletConfig;
+        const mobileConfig = {
+            ratios: [50, 50],
+            direction: 'column',
+            children: ['2d', '3d'],
+        };
+        
+        // if width < 1024
+        if (window.innerWidth < 1024) {
+            config = mobileConfig;
+        }
+        const vm = await bimdataViewer.mount("#app", config);
+        console.log('BIMData Viewer version ' + vm.$viewer.version)
+        
+        vm.$viewer.state.hub.on("objects-selected", ({ objects }) => {
+            const message = {
+                key: "objectSelection",
+                objectUuids: objects.map(obj => obj.uuid),
+            };
+            window.webkit.messageHandlers.iOSObjectSelectedListener.postMessage(JSON.stringify(message));
+        });
+        console.debug('BIMData Viewer has launched');
+
+})();
+  
+</script>
+
+<body>
+    <div style="height: 100vh;">
+         <div id="app"></div>
+     </div>
+ </body>
+</html>
